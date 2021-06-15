@@ -1,0 +1,151 @@
+#page title
+page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+
+# App Info
+ios_app_id                                : 1518652273                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+
+appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+playstore_link                            :                                           # Enter Google Play Store URL.
+presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file).
+                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
+
+app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description                           : Outrunner Route Planner optimizes the order of your delivery routes to save money on fuel and your time.
+
+enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
+
+
+
+# Information About Yourself
+your_name                                 : Proalab Limited
+your_link                                 : https://apps.proalab.com/
+your_city                                 : Auckland, New Zealand
+email_address                             : apps@proalab.com
+facebook_username                         :
+instagram_username                        :
+twitter_username                          :
+github_username                           :
+youtube_username                          :
+
+
+
+# Feature List                            Edit, add or remove features to be presented.
+features                                  :
+
+  - title                                 : Optimize your Route
+    description                           : optimize up to 200 stops with timeframe on a time you need to be in a specific point
+    fontawesome_icon_name                 : map-marked-alt
+
+  - title                                 : Powerful Route Builder
+    description                           : with waypoints, stopovers and stop time windows
+    fontawesome_icon_name                 : route
+
+  - title                                 : Pick Your Delivery Style
+    description                           : supports trucks, motorcycles, cars, bicycles and walking deliveries
+    fontawesome_icon_name                 : motorcycle
+
+  - title                                 : Simple delivery management
+    description                           : easy import of delivery addresses with delivery statuses
+    fontawesome_icon_name                 : file-import
+
+  - title                                 : Navigation is on us
+    description                           : one-click navigation to every stop.
+    fontawesome_icon_name                 : directions
+
+  - title                                 : Share, Save, Export
+    description                           : history of your deliveries in one place
+    fontawesome_icon_name                 : share-alt-square
+
+  - title                                 : # Smart App Banner
+    description                           : # Display a smart app banner on iOS devices.
+    fontawesome_icon_name                 : # arrow-alt-circle-down
+
+  - title                                 : # Social Links
+    description                           : # Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
+    fontawesome_icon_name                 : # link
+
+  - title                                 : # FontAwesome Support
+    description                           : # Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
+    fontawesome_icon_name                 : # info-circle
+
+  - title                                 : # New Feature Title
+    description                           : # New Feature Description
+    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
+
+
+
+# Theme Settings
+topbar_color                              : "#000000"
+topbar_transparency                       : 0.1
+topbar_title_color                        : "#ffffff"
+
+cover_image                               : assets/S-NA21.jpg                    # Replace with alternative image path or image URL.
+cover_overlay_color                       : "#363b3d"
+cover_overlay_transparency                : 0.6
+
+device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
+
+body_background_color                     : "#ffffff"
+
+link_color                                : "#ffc905"
+
+app_title_color                           : "#ffffff"
+app_price_color                           : "#ffffff"
+app_description_color                     : "#ffffff"
+
+feature_title_color                       : "#000000"
+feature_text_color                        : "#666666"
+
+feature_icons_foreground_color            : "#ffc905"
+feature_icons_background_color            : "#e6e6e6"
+
+social_icons_foreground_color             : "#666666"
+social_icons_background_color             : "#e6e6e6"
+
+footer_text_color                         : "#666666"
+
+
+
+# Pluggins Settings
+# jekyll-seo-tag
+title: Outrunner Route Planner Mobile App
+tagline: Outrunner Route Planner Mobile App
+description: Outrunner Route Planner optimizes the order of your delivery routes to save money on fuel and your time.
+google_site_verification:
+# jekyll-sitemap
+url: "https://travelcast.proalab.com" # the base hostname & protocol for your site
+#
+
+
+
+
+
+
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Markdown rendering
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
